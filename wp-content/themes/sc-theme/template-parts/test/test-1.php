@@ -1,0 +1,1 @@
+<pre><?php debug($args)?></pre>

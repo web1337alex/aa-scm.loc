@@ -1,0 +1,47 @@
+@mixin col($size){
+    flex: 0 0 auto;
+    width: calc(#{percentage($size / 12)} - #{$gap-grid});
+}
+
+@mixin media($width){
+    @media (max-width: $width) {
+        @content;
+    }
+}
+
+@mixin bp($breakpoint-name){
+    $width: map-get($grid-breakpoints, $breakpoint-name);
+    @include media($width){
+        @content;
+    }
+}
+
+@mixin w100{
+    width: 100%;
+}
+
+@mixin container{
+    margin: 0 auto;
+    width: $container-max-width;
+    max-width: 100%;
+    padding-left: $gap-grid-half;
+    padding-right: $gap-grid-half;
+}
+
+@mixin row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -$gap-grid-half;
+    margin-right: -$gap-grid-half;
+    
+    > *{
+        width: 100%;
+        margin-left: $gap-grid-half;
+        margin-right: $gap-grid-half;
+    }
+}
+
+@mixin defaultcol(){
+    flex: 1 0 0%;
+}

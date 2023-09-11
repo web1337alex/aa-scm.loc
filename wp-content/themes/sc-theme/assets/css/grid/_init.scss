@@ -1,0 +1,20 @@
+@import 'variables';
+@import 'mixins';
+@import 'classes';
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    min-height: 100vh;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}

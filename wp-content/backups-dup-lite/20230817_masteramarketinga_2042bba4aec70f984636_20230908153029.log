@@ -1,0 +1,73 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: 08.09.2023 15:30
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.5.5.1
+WORDPRESS:	6.3.1
+PHP INFO:	8.0.22 | SAPI: apache2handler
+SERVER:		Apache 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 4294967296 (1536M default) 
+MEMORY STACK: 76MB
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   MYSQLDUMP
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Is Supported
+SQL CREATED: 20230817_masteramarketinga_2042bba4aec70f984636_20230908153029_database.sql
+SQL FILE SIZE: 1.16MB (1213699)
+SQL FILE TIME: 2023-09-08 15:30:53
+SQL RUNTIME: 4.69 sec.
+
+********************************************************************************
+ARCHIVE (ZIP):
+********************************************************************************
+ARCHIVE DIR:  D:/OSPanel/domains/aa-scm.loc
+ARCHIVE FILE: 20230817_masteramarketinga_2042bba4aec70f984636_20230908153029_archive.zip
+FILTERS: *OFF*
+DIRS:
+	not set
+FILES:
+	not set
+EXTS:  not set
+----------------------------------------
+COMPRESSING
+SIZE:	157.86MB
+STATS:	Dirs 949 | Files 6,997
+SQL ADDED: 20230817_masteramarketinga_2042bba4aec70f984636_20230908153029_database.sql
+ZipArchive Object
+(
+    [lastId] => 7945
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 7946
+    [filename] => D:\OSPanel\domains\aa-scm.loc\wp-content\backups-dup-lite\tmp\20230817_masteramarketinga_2042bba4aec70f984636_20230908153029_archive.zip
+    [comment] => 
+)
+
+FILE ADDED TO ZIP: 7945
+COMPRESSION RESULT: '1'
+COMPRESSED SIZE: 65.52MB
+ARCHIVE RUNTIME: 32.53 sec.
+MEMORY STACK: 78MB
+building installer
+ARCHIVE CONSISTENCY TEST: PASS
+
+********************************************************************************
+INTEGRITY CHECKS:
+********************************************************************************
+SQL FILE: 1.16MB
+INSTALLER FILE: 73.48KB
+ARCHIVE FILE: 67.41MB 
+ОЖИДАЕМОЕ КОЛИЧЕСТВО ФАЙЛОВ/КАТОЛОГ: 7,946
+ФАКТИЧЕСКОЕ КОЛИЧЕСТВО ФАЙЛОВ/КАТАЛОГОВ: 7,945
+ТЕСТ ЛОГИКИ АРХИВА: Пройден
+
+********************************************************************************
+RECORD ID:[8]
+TOTAL PROCESS RUNTIME: 42.06 sec.
+PEAK PHP MEMORY USED: 80MB
+DONE PROCESSING => 20230817_masteramarketinga 08.09.2023 15:31
+

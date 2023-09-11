@@ -1,0 +1,32 @@
+.wrapper, .wrapper > *{
+    @include w100();
+}
+
+.container{
+    @include container();
+}
+
+.row{
+    @include row();
+}
+
+.col{
+    @include defaultcol();
+
+}
+
+@for $i from 1 through $grid-collumns-count{
+    .col-#{$i}{
+        @include col($i);
+    }
+}
+
+@each $bp, $width in $grid-breakpoints{
+    @include media($width){
+        @for $i from 1 through $grid-collumns-count{
+            .col-#{$bp}-#{$i}{
+                @include col($i);
+            }
+        }
+    }
+}

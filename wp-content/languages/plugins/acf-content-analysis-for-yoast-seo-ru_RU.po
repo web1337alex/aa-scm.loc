@@ -1,0 +1,56 @@
+# Translation of Plugins - ACF Content Analysis for Yoast SEO - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - ACF Content Analysis for Yoast SEO - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-05-23 12:22:49+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.0-alpha.4\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - ACF Content Analysis for Yoast SEO - Stable (latest release)\n"
+
+#. translators: %1$s resolves to Yoast SEO, %2$s resolves to ACF Content
+#. Analysis for Yoast SEO.
+#: inc/dependencies/dependency-yoast-seo.php:66
+msgid "Please upgrade the %1$s plugin to the latest version to allow the %2$s module to work."
+msgstr "Обновите плагин %1$s до последней версии, чтобы плагин %2$s заработал."
+
+#. translators: %1$s resolves to ACF Content Analysis for Yoast SEO, %2$s
+#. resolves to Yoast SEO.
+#: inc/dependencies/dependency-yoast-seo.php:52
+msgid "%1$s requires %2$s to be installed and activated."
+msgstr "%1$s требует установки и активации %2$s."
+
+#. Author URI of the plugin
+msgid "https://yoa.st/team-yoast-acf"
+msgstr "https://yoa.st/team-yoast-acf"
+
+#. translators: %1$s resolves to ACF Content Analysis for Yoast SEO, %2$s
+#. resolves to Advanced Custom Fields, %3$s resolves to the minimum required
+#. ACF version.
+#: inc/dependencies/dependency-acf.php:45
+msgid "%1$s requires %2$s (free or pro) %3$s or higher to be installed and activated."
+msgstr "Для установки и активации %1$s требуется %2$s (бесплатная или профессиональная версия) %3$s или выше."
+
+#. Author of the plugin
+msgid "Thomas Kräftner, ViktorFroberg, marol87, pekz0r, angrycreative, Team Yoast"
+msgstr "Thomas Kräftner, ViktorFroberg, marol87, pekz0r, angrycreative, Team Yoast"
+
+#. Description of the plugin
+msgid "Ensure that Yoast SEO analyzes all Advanced Custom Fields 5.7+ content including Flexible Content and Repeaters."
+msgstr "Убедитесь, что Yoast SEO анализирует весь контент Advanced Custom Fields 4 и 5, включая гибкий контент и репитеры."
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/acf-content-analysis-for-yoast-seo/"
+msgstr "https://wordpress.org/plugins/acf-content-analysis-for-yoast-seo/"
+
+#. Plugin Name of the plugin
+msgid "ACF Content Analysis for Yoast SEO"
+msgstr "ACF Content Analysis for Yoast SEO"
+
+#. translators: %1$s resolves to ACF Content Analysis for Yoast SEO
+#: yoast-acf-analysis.php:57
+msgid "%1$s could not be loaded because of missing files."
+msgstr "%1$s не удалось загрузить из-за отсутствия файлов."

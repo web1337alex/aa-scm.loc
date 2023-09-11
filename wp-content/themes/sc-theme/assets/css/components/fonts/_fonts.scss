@@ -1,0 +1,34 @@
+@import 'allfonts';
+
+body{
+    font-family: 'Futura PT Book';
+}
+
+$font-sizes: (
+    example: (8vw, 4vw, 2.5vw),
+);
+
+$font-weights: (
+    example: 600,
+);
+
+@each $style, $fz in $font-sizes{
+    $bp-lenghts: length($fz);
+    @for $i from 1 through $bp-lenghts{
+        $current-fz: nth($fz, $i);
+        $current-bp: nth($grid-breakpoints, $i);
+        $bp-width: nth($current-bp, 2);
+        $font-x: 0.9;
+        @media (min-width: $bp-width){
+            .#{$style}{
+                font-size: calc($current-fz * $font-x);
+            }
+        }
+    }
+}
+
+@each $style, $fw in $font-weights{
+    .#{$style}{
+        font-weight: $fw;
+    }
+}
