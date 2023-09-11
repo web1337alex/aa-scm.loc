@@ -31,8 +31,12 @@
 	                                    <?php if(!empty($slide['buttons'])):?>
                                             <div class="fs__buttons">
 	                                            <?php foreach($slide['buttons'] as $button):?>
-                                                    <a href="<?=$button['link']?>" class="button" style="background-color: var(--<?=$button['color']?>);"><?=$button['text']?></a>
-	                                            <?php endforeach?>
+                                                    <?if(substr($button['link'], 0, 1) === "#"):?>
+                                                        <button data-fancybox data-src="<?=$button['link']?>" class="button" style="background-color: var(--<?=$button['color']?>);"><?=$button['text']?></button>
+                                                    <?else:?>
+                                                        <a href="<?=$button['link']?>" class="button" style="background-color: var(--<?=$button['color']?>);"><?=$button['text']?></a>
+                                                    <?endif?>
+                                                <?php endforeach?>
                                             </div>
 	                                    <?php endif?>
                                     </div>

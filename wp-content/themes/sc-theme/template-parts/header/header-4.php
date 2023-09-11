@@ -40,7 +40,7 @@ $headerMenu = $CoreTheme::getMenu('headerMenu');
                 <div class="col-2 col-md-8 col-lg-2 header__phone">
                     <div class="header__contacts">
                         <a class="header__tel" href="tel:<?= $CoreTheme::$settings['clean_phone'] ?>"><?= $CoreTheme::$settings['phone'] ?></a>
-                        <a class="button header__button" href="<?= $args['link']['url'] ?>"><?= $args['link']['text'] ?></a>
+                        <button data-fancybox class="button header__button" data-src="<?= $args['link']['url'] ?>"><?= $args['link']['text'] ?></button>
                     </div>
                 </div>
             </div>

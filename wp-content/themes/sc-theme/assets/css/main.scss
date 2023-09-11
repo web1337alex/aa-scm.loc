@@ -1888,3 +1888,13 @@ input[type=submit].button {
         margin-bottom: $gap-grid;
     }
 }
+
+
+// modal
+
+.modal{
+    & > div{
+        display: none;
+    }
+}
+
