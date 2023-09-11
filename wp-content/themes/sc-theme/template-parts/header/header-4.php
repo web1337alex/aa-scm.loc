@@ -14,7 +14,7 @@ $headerMenu = $CoreTheme::getMenu('headerMenu');
                         <?= wp_get_attachment_image($args['logo'], 'large') ?>
                     </a>
                 </div>
-                <div class="col-6 col-lg-7 header__menu">
+                <div class="col-5 col-lg-7 header__menu">
                     <nav class="header__nav">
                         <div class="header__placeholder">
                             <div class="container">
@@ -32,10 +32,15 @@ $headerMenu = $CoreTheme::getMenu('headerMenu');
                         </ul>
                     </nav>
                 </div>
-                <div class="col-3 col-md-8 col-lg-2 header__phone">
+                <div class="col-2">
+                    <div class="header_address">
+                        <p>г. Тюмень, улица Максима Горького 44.</p>
+                    </div>
+                </div>
+                <div class="col-2 col-md-8 col-lg-2 header__phone">
                     <div class="header__contacts">
                         <a class="header__tel" href="tel:<?= $CoreTheme::$settings['clean_phone'] ?>"><?= $CoreTheme::$settings['phone'] ?></a>
-                        <a class="header__call" href="<?= $args['link']['url'] ?>"><?= $args['link']['text'] ?></a>
+                        <a class="button header__button" href="<?= $args['link']['url'] ?>"><?= $args['link']['text'] ?></a>
                     </div>
                 </div>
             </div>
