@@ -339,6 +339,7 @@ class CoreTheme
             wp_localize_script('ajax-form', 'ajax_form_object', [
                 'url' => admin_url('admin-ajax.php'),
                 'nonce' => wp_create_nonce('ajax-form-nonce'),
+                'thanks' => get_field('form_settings', 'options')['thanks'],
             ]);
         }
     }

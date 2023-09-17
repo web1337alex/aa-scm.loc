@@ -29,7 +29,8 @@ jQuery(document).ready(function($) {
     
                     setTimeout(function() {
                         msgElement.remove();
-                    }, 3000);
+                        $(location).attr('href', ajax_form_object.thanks);
+                    }, 1500);
                 }
                 else{
                     $.each(request.data, function (key, val){

@@ -1,5 +1,6 @@
 <?php
     global $CoreTheme;
+    /** @var array $args*/
 ?>
 
 <section class="gallery gallery-2">
@@ -56,4 +57,13 @@
             </div>
         <?endif?>
     </div>
+    <?if($args['enable_button'] == true):?>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 jcc">
+                    <a href="<?=$args['button']['url']?>" target="<?=$args['button']['target']?>" class="button gallery__button"><?=$args['button']['title']?></a>
+                </div>
+            </div>
+        </div>
+    <?endif?>
 </section>

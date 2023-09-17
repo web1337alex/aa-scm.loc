@@ -729,6 +729,11 @@ h2{
         margin-bottom: calc($gap-grid-half * 3);
     }
 
+    .gallery__button{
+        margin-top: $gap-grid;
+        width: fit-content;
+    }
+
     .gallery__top,
     .gallery__thumbs {
         overflow-x: hidden;
@@ -784,6 +789,7 @@ h2{
                             img {
                                 border-radius: 0.625rem;
                                 aspect-ratio: 3 / 1;
+                                object-fit: cover;
                             }
                         }
                     }
@@ -1369,10 +1375,17 @@ footer.footer-1 {
 }
 
 .jce {
+    display: flex; 
     justify-content: end;
 }
 
+.jcc{
+    display: flex;
+    justify-content: center;
+}
+
 .jcsb {
+    display: flex;
     justify-content: space-between;
 }
 

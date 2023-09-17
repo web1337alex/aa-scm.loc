@@ -1113,6 +1113,11 @@ h2 {
 .gallery.gallery-2 .sectiontitle {
   margin-bottom: 30px;
 }
+.gallery.gallery-2 .gallery__button {
+  margin-top: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 .gallery.gallery-2 .gallery__top,
 .gallery.gallery-2 .gallery__thumbs {
   overflow-x: hidden;
@@ -1167,6 +1172,8 @@ h2 {
 .gallery.gallery-2 .gallery__top .swiper-wrapper .swiper-slide .gallery_slide .gallery_image .gallery_link img {
   border-radius: 0.625rem;
   aspect-ratio: 3/1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .gallery.gallery-2 .gallery__top .swiper-wrapper .swiper-slide .gallery_slide .gallery__text {
   width: calc(33.3333333333% - 30px);
@@ -1649,10 +1656,17 @@ footer.footer-1 .copyright a:hover {
 }
 
 .jce {
+  display: flex;
   justify-content: end;
 }
 
+.jcc {
+  display: flex;
+  justify-content: center;
+}
+
 .jcsb {
+  display: flex;
   justify-content: space-between;
 }
 
