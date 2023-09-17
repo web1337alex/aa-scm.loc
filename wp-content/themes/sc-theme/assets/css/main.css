@@ -614,6 +614,10 @@ h2 {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.header-4 .header__address {
+  display: flex;
+  align-items: center;
+}
 .header-4 .header__title {
   display: flex;
   align-items: center;
@@ -2125,4 +2129,13 @@ input[type=submit].button {
 
 .modal > div {
   display: none;
+}
+
+.common .content {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.tab__item > .content {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */

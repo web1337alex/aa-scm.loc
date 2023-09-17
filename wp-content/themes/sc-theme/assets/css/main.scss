@@ -110,6 +110,11 @@ h2{
             }
         }
 
+        &__address{
+            display: flex;
+            align-items: center;
+        }
+
         &__title {
             display: flex;
             align-items: center;
@@ -1898,3 +1903,11 @@ input[type=submit].button {
     }
 }
 
+.common .content{
+    margin-top: $gap-grid-half;
+    margin-bottom: $gap-grid;
+}
+
+.tab__item > .content{
+    margin-bottom: $gap-grid;
+}

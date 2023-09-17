@@ -32,9 +32,9 @@ $headerMenu = $CoreTheme::getMenu('headerMenu');
                         </ul>
                     </nav>
                 </div>
-                <div class="col-2">
-                    <div class="header_address">
-                        <p>г. Тюмень, улица Максима Горького 44.</p>
+                <div class="col-2 header__address">
+                    <div class="header__city">
+                        <p><?= $CoreTheme::$settings['address'] ?></p>
                     </div>
                 </div>
                 <div class="col-2 col-md-8 col-lg-2 header__phone">
