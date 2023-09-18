@@ -68,26 +68,36 @@ var galleryThumbs = new Swiper('.gallery__thumbs', {
 galleryTop.controller.control = galleryThumbs;
 galleryThumbs.controller.control = galleryTop;
 
-const tabsButtons = document.querySelectorAll('.tab__button');
+// Находим все секции с классом tagsSection
+const tagsSections = document.querySelectorAll('.tagsSection');
 
-tabsButtons.forEach(btn => {
-  btn.addEventListener('click', () => {
-    const prevActiveItem = document.querySelectorAll('.tab__item.active');
-    const prevActiveButton = document.querySelectorAll('.tab__button.active');
-    if (prevActiveButton) {
-		prevActiveButton.forEach(element => {
-			element.classList.remove('active');
-		});
-    }
-    if (prevActiveItem) {
-		prevActiveItem.forEach(element => {
-			element.classList.remove('active');
-		});
-    }
-    const nextActiveItemId = `#${btn.getAttribute('data-tab')}`;
-    const nextActiveItem = document.querySelector(nextActiveItemId);
-    btn.classList.add('active');
-    nextActiveItem.classList.add('active');
+tagsSections.forEach((tagsSection) => {
+  // Находим все кнопки в текущей секции
+  const tabsButtons = tagsSection.querySelectorAll('.tab__button');
+
+  tabsButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const prevActiveItem = tagsSection.querySelectorAll('.tab__item.active');
+      const prevActiveButton = tagsSection.querySelectorAll('.tab__button.active');
+
+      if (prevActiveButton.length > 0) {
+        prevActiveButton.forEach((element) => {
+          element.classList.remove('active');
+        });
+      }
+
+      if (prevActiveItem.length > 0) {
+        prevActiveItem.forEach((element) => {
+          element.classList.remove('active');
+        });
+      }
+
+      const nextActiveItemId = `#${btn.getAttribute('data-tab')}`;
+      const nextActiveItem = tagsSection.querySelector(nextActiveItemId);
+
+      btn.classList.add('active');
+      nextActiveItem.classList.add('active');
+    });
   });
 });
 

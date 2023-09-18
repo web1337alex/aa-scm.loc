@@ -54,7 +54,7 @@
 
 ?>
 
-<section class="common common-1">
+<section class="common common-1 tagsSection">
     <div class="container">
         <div class="row">
             <div class="col-12">

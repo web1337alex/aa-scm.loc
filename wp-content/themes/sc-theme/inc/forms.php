@@ -46,7 +46,11 @@ function ajax_action_callback() {
         $home_url = wp_parse_url(home_url());
         $subject = 'Заявка «Мастера маркетинга»';
 		$email_from = get_option('admin_email');
-        $headers = 'From: ' . $home_url['host'] . ' <' . $email_from . '>' . "\r\n" . 'Reply-To: ' . $email_from;
+        $headers = array(
+            'Content-Type: text/html; charset=UTF-8',
+            'From: ' . $home_url['host'] . ' <' . $email_from . '>',
+            'Reply-To: ' . $email_from
+        );
 
         $mails = "";
         foreach($formSettings['emails'] as $iKeyMail => $email){

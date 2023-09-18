@@ -4,7 +4,7 @@
 global $CoreTheme;
 ?>
 
-<section class="common common-1">
+<section class="common common-1 tagsSection">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -20,7 +20,7 @@ global $CoreTheme;
         </div>
         <? if (!empty($args['tabs'])): ?>
             <div class="row tags common__tags tabs">
-                <span class="tag tab__button active" data-tab="all">Все сайты</span>
+                <span class="tag tab__button active" data-tab="allSites">Все сайты</span>
                 <? foreach ($args['tabs'] as $iketTab => $tabItem): ?>
                     <? if ($args['tabs'] > 0): ?>
                         <span class="tag tab__button" data-tab="tab_<?= $iketTab ?>">
@@ -33,7 +33,7 @@ global $CoreTheme;
 
         <? if (!empty($args['tabs'])): ?>
             <div class="row cards contentTabs">
-                <div id="all" class="tab__item active">
+                <div id="allSites" class="tab__item active">
                     <div class="cards row">
                         <? foreach ($args['tabs'] as $tabs) {
                             foreach ($tabs['sites'] as $site) {
