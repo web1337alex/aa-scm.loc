@@ -31,7 +31,9 @@
                 <?endforeach?>
             </div>
         <?else:?>
-            <p class="card__desc"><?=$postContent['desc']?></p>
+            <?if(isset($postContent['desc'])):?>
+                <p class="card__desc"><?=$postContent['desc']?></p>
+            <?endif?>
         <?endif?>
         <?if($postContent['visible']['price'] == true):?>
             <p class="card__price">

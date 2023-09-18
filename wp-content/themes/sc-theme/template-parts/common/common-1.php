@@ -76,7 +76,8 @@
             <div class="row cards contentTabs">
                 <div id="all" class="tab__item active">
                     <div class="cards row">
-                        <?foreach($allPosts as $ikeyPost => $postItem){
+                        <? shuffle($allPosts);
+                        foreach($allPosts as $ikeyPost => $postItem){
                             /** @var array $postItem */
                             get_template_part('template-parts/items/common', '1', $postItem);
                         }?>
